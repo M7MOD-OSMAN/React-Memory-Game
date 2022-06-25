@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Image = ({url}) => (
-  <div>
-    <img src={url} alt="" width="200"/>
-  </div>
+const Image = ({ url }) => (
+    <div>
+        <img src={url} alt="" width="200" />
+    </div>
 );
 
 export default Image;
 
-Image.prototype = {
-  url: PropTypes.string.isRequired
-}
+Image.propTypes = {
+    url: PropTypes.string.isRequired,
+};
